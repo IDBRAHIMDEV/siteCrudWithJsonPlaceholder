@@ -14,5 +14,8 @@ return this.http.get(this.url)
 }
 
 
+getPostsUser(id) {
+  return this.http.get(this.url+'/'+id+'/posts')
+}
 
 }

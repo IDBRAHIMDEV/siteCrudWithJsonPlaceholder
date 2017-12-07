@@ -15,8 +15,10 @@ const routes: Routes = [
   {path: 'albums', component: AlbumsComponent},
   {path: 'posts', component: PostsComponent },
   {path: 'todos', component: TodosComponent},
-  {path: 'user', component: UserComponent},
-  {path: 'users', component: UsersComponent},
+  {path: 'users', children: [
+    {path: '', component: UsersComponent},
+    {path: 'show/:id', component: UserComponent},
+  ]},
   {path: '**', redirectTo: '/home'}
   //{path: '**', component: NotFoundComponent}
  
