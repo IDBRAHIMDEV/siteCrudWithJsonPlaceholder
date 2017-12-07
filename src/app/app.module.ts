@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PostsService } from './posts.service';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -28,9 +30,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
