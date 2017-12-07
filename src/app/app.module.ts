@@ -11,6 +11,7 @@ import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PostsComponent } from './posts/posts.component';
     UserComponent,
     HomeComponent,
     UsersComponent,
-    PostsComponent
+    PostsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
