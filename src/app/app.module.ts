@@ -14,6 +14,7 @@ import { PostsComponent } from './posts/posts.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PostsService } from './posts.service';
 import { HttpModule } from '@angular/http';
+import { UsersService } from './users.service';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { HttpModule } from '@angular/http';
     AppRoutingModule,
     HttpModule
   ],
-  providers: [PostsService],
+  providers: [PostsService, UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

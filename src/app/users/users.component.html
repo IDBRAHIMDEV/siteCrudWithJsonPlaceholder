@@ -1,3 +1,12 @@
-<p>
-  users works!
-</p>
+
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let user of users">
+    <h3>{{ user.name }}</h3>
+    <p>
+      username: {{ user.username }}  <br>
+      email: {{ user.email }}
+
+    </p>
+  </li>
+</ul>
