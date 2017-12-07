@@ -1,3 +1,10 @@
-<p>
-  todos works!
-</p>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let todo of todos">
+    <h3>{{todo.userId}}</h3>
+    <p>{{todo.id}}</p>
+    <p>{{todo.title}}</p>
+    <p>
+      <input type="checkbox" [(ngModel)]="todo.completed" name="completed">
+    </p>
+  </li>
+</ul>

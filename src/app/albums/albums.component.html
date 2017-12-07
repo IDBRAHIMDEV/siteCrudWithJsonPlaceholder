@@ -1,3 +1,7 @@
-<p>
-  albums works!
-</p>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let album of albums">
+    <h3>{{album.userId}}</h3>
+    <p>{{album.id}}</p>
+    <p>{{album.title}}</p>
+  </li>
+</ul>

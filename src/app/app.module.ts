@@ -1,5 +1,8 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -14,6 +17,8 @@ import { PostsComponent } from './posts/posts.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PostsService } from './posts.service';
 import { HttpModule } from '@angular/http';
+import { TodosService } from './todos.service';
+import { AlbumsService } from './albums.service';
 
 
 @NgModule({
@@ -31,9 +36,10 @@ import { HttpModule } from '@angular/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
-  providers: [PostsService],
+  providers: [PostsService, TodosService, AlbumsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
