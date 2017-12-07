@@ -19,6 +19,8 @@ import { PostsService } from './posts.service';
 import { HttpModule } from '@angular/http';
 import { TodosService } from './todos.service';
 import { AlbumsService } from './albums.service';
+import { UsersService } from './users.service';
+
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import { AlbumsService } from './albums.service';
     HttpModule,
     FormsModule
   ],
-  providers: [PostsService, TodosService, AlbumsService],
+
+  providers: [PostsService, UsersService, TodosService, AlbumsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
