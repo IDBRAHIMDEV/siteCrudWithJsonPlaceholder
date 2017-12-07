@@ -8,6 +8,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TodosComponent } from './todos/todos.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { UserComponent } from './user/user.component';
+import { HomeComponent } from './home/home.component';
+import { UsersComponent } from './users/users.component';
+import { PostsComponent } from './posts/posts.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { UserComponent } from './user/user.component';
     NavbarComponent,
     TodosComponent,
     AlbumsComponent,
-    UserComponent
+    UserComponent,
+    HomeComponent,
+    UsersComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
